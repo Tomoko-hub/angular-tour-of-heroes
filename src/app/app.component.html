@@ -1,3 +1,7 @@
 <h1>{{ title }}</h1>
-<app-heroes></app-heroes>
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes(Click Here!)</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
